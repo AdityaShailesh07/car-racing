@@ -36,7 +36,8 @@ class Player {
 
 getCarsAtEnd(){
 
-database.ref('carsAtEnd').on("value",(data)=>{
+  //Here it is capital C in carsAtEnd. Reason: It should be same as you have written in database.
+database.ref('CarsAtEnd').on("value",(data)=>{
 this.rank = data.val();
 
 })
